@@ -1,0 +1,314 @@
+body {
+    margin: 0px;
+    line-height: 1.4em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    
+}
+
+body, html {
+    height: 100%;
+}
+
+.navigation {
+    float: left;
+
+}
+
+.wrapper {
+    width: 940px;
+    margin: 20px auto 20px auto;
+    background-color: #ffffff;
+}
+
+section.courses {
+    float: left;
+    overflow: auto;
+    width: 100%;
+}
+
+figure {
+    float: center;
+    width: 320px;
+    height: 360px;
+    padding: 5px;
+    margin: 20px;
+    margin-top: 15px;
+    border: 1px solid black;
+    flex: 50%;
+    padding: 0 4px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.sect {
+    text-align:center;
+}
+
+
+figcaption {
+    font-size: 90%;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif; 
+    color: #111;
+
+}
+
+.section {
+    color: #777;
+    background-color:#f2f2f2;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+}
+
+.p-div {
+    font-size: 16px;
+}
+
+
+.div-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+    padding-top: 3px;
+    font-size: 13px;
+    text-align: center;
+   
+
+}
+
+a:link {
+    color: green; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+    font-size: 14px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: purple;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+div.polaroid {
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25); 
+  margin-bottom: 25px;
+  margin-right: 25px;
+  margin-left: 65px;
+  margin-top: 30px;
+  float: left;
+}
+
+.section2 {
+    color: #777;
+    background-color: white;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+
+}
+
+#hero {
+    background-image: url(assets/home4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: rgba(0,0,0,0.4);
+
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: -10;   
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+h2 {
+    margin: 0px;
+    float: left;
+    padding: 25px 0;
+    color: #444;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+  
+.logo {
+    float: left;
+}
+  /* ~~ Top Navigation Bar ~~ */
+  
+#navigation-container {
+    width: 1200px;
+    height: 70px;
+  }
+  
+.navigation-bar {
+    /*background-color: rgba(0,0,0,0.5);*/ /*to make Navbar change opacity*/
+    background-color: black;
+    height: 120px;
+    width: 100%;
+}
+
+.navigation-bar img{
+    padding-top: 35px;
+    padding-left: 60px;
+}
+  
+.navigation-bar ul {
+    padding-top: 35px;
+    padding-left: 145px;
+    margin: 0px;
+    display:inline-block;
+    vertical-align:top;
+}
+  
+.navigation-bar li {
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+  
+.navigation-bar li a {
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+    text-decoration: none;
+    line-height: 70px;
+    padding: 5px 15px;
+    opacity: 0.7;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: inline-block;
+    height: 0px;
+    background-color: #444;
+    
+    top: 0;
+    width: 100%;
+    
+    transition: all ease-in-out 250ms;
+   
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.type {
+    color: #f2f2f2;
+    font-family: 'Work Sans', sans-serif;
+    padding-left: 60px;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 20px;
+    transform: translateY(-300%);
+}
+
+img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}   
+
+.icon {
+    margin-left: 65%;
+    padding-top: 100px;
+    height: 400px;
+    width: 400px;
+   /* border-style: solid;
+    border-color:white;*/
+}
+
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.contain{
+  color: white;/* #cf1767;*/
+  font-family: 'Anonymous Pro', monospace;  
+  /*padding-top: 160px;*/
+  text-align: left;
+  font-size: 30px;
+  display: inline;
+}
+
+.line-1{
+    width: 550px;
+    margin: 0px;
+    height: 30px;
+    padding-left: 60px;
+    border-right: 3px solid rgba(255,255,255,.75);
+    text-align: left;
+    padding-bottom: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-1150%);  /*padding top*/
+}
+
+/* Animation */
+.anim-typewriter{
+  padding-bottom: 0px;
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 400ms steps(30) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 21em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
