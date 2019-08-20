@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
         <link rel="shortcut icon" href="assets/logo.png" />
         <title>Lane Tech LaunchX</title>
         <link rel="stylesheet" href="styles.css" type="text/css" />
@@ -19,10 +22,7 @@
             this.tick();
             this.isDeleting = false;
           };
-        </script>
 
-        
-        <script>
           function expandYames() {
             var dots = document.getElementById("dotsYames");
             var moreText = document.getElementById("moreYames");
@@ -79,6 +79,7 @@
               btnText.innerHTML = "Read less"; 
               moreText.style.display = "inline";
             }
+            
           }
 
           function expandTia() {
@@ -115,15 +116,19 @@
             </div>
         </div> 
         <div class="contain">
-            <div class = "icon"></div> <!--src = "assets/astro.png"-->
+            <div class = "icon">
+              <img style = "height:300px;width:300px;margin-left: 180px" src= "assets/astronaut.png">
+              <div class = "credits">Icons made by <a style = "color: tomato" href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a style = "color: tomato" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a style = "color: tomato" href="http://creativecommons.org/licenses/by/3.0/"  title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </div>
+            
             <p class="line-1 anim-typewriter"><u>We are the next wave of changemakers.</u></p>
             <p class = "type"> At Lane Tech LaunchX, we give the students the tools and resources to <br>start real companies. 
               Through our weekly lessons, we will train <br> students in the skills and innovative thinking that allows founders <br>
                to create successful businesses. We believe that age is just a number, <br>
                and even teenagers are capable of making a real and meaningful impact!</p> 
-              </p>
+            </p>
           </div>  
-    </div>
+      </div>
 
 
     <div id = "about" class="section2">
@@ -153,22 +158,15 @@
         <!--Yames-->
         <div class = "card-area">
           <div class="img-area">
-            <div class="sin-img" style = "background-image: url(assets/yames.jpg)"></div>
+            <div class="sin-img" style = "background-image: url(assets/pfp.jpg)"></div>
           </div>
           <div class="img-text">
             <h1 style = "font-family: monospace">Yamilett Estrada-Reyes</h1>
             <h2 style = "font-family: monospace">Club President</h2>
-            <p>Yamilett is an advocate for gender equality in tech and a sophomore at Lane Tech College Prep. 
-                She founded the LaunchX chapter at her school after her brother advanced as a Global Finalist
+            <p>Yamilett is an advocate for gender equality in technology and a sophomore at Lane Tech College Prep. She founded the LaunchX chapter at her school after her brother advanced as a Global Finalist for his own
                 <span id="dotsYames">...</span>
                 <span id="moreYames">
-                    for his own school's LaunchX Club. 
-                  At LaunchX, she leads club meetings, teaches peers about the entrepreneurial process, and supports students in building their companies
-                    by providing resources and connections. 
-                    Outside of LaunchX, she is a part of the Lane Tech varsity robotics team, the Chicago Style BotDogs, and is heavily
-                    involved in all-female CS communities as a NCWIT Awardee, and #BUILTBYGIRLS Advisee. 
-                    In her free time, she likes to workout at her boxing gym, drink unhealthy amounts of coffee,
-                    attend local hackathons and CS conventions, and independently work on other projects.
+                  school's LaunchX chapter. At LT LaunchX, she leads club meetings, teaches peers about the entrepreneurial process, and supports students in building their own companies by providing resources and connections. Outside of LT LaunchX, she mentors students at the Harold Washington Library and is heavily involved in all-female CS communities as an NCWIT Awardee and #BUILTBYGIRLS Advisee. During her free time, she likes to workout at her local boxing gym, drink copious amounts of coffee, attend local hackathons and CS conventions, and independently work on other projects.
                 </span>
             </p>
             <p style = "color:tomato;font-family: monospace; font-size: 18px" onclick= "expandRowOne()" id="btnYames">Read more</p>
@@ -183,18 +181,15 @@
         <!--Amanda-->
         <div class = "card-area">
             <div class="img-area">
-              <div class="sin-img" style = "background-image: url(assets/amanda.PNG)"></div>
+              <div class="sin-img" style = "background-image: url(assets/amanda3.jpg)"></div>
             </div>
             <div class="img-text">
               <h1 style = "font-family: monospace">Amanda Wolski</h1>
               <h2 style = "font-family: monospace">Vice President of Education</h2>
-              <p>Amanda Wolski is a senior at Lane Tech College Prep and a recent graduate from Henryk Sienkiewicz Polish Language School. Being Vice President of Education, she teaches club members about 
+              <p>Amanda is a senior at Lane Tech College Prep and a recent graduate from Henryk Sienkiewicz Polish Language School. Being Vice President of Education, she teaches club members about entrepreneurship through
                   <span id="dotsAmanda">...</span>
                   <span id="moreAmanda">
-                      entrepreneurship through MIT’s curriculum, workshops, and other resources made accessible by the leadership team. Examples of her experience in education include interning at the Museum of Science 
-                      and Industry, volunteering at her local Polish School, and tutoring her Japanese peers in their English studies from the 2018 TOMODACHI foreign exchange program.
-                      Outside of LaunchX, she is very involved in Lane Tech’s community through clubs such as the National Honor Society, varsity robotics team, 
-                       KISS Institute’s Botball competition at Loyola University, and the annual Japan Bowl Competition.
+                    MIT’s curriculum, workshops, and other resources made accessible by the leadership team. Examples of her experience in education include interning at the Museum of Science and Industry, volunteering at her local Polish School, and tutoring her Japanese peers in their English studies from the 2018 TOMODACHI foreign exchange program. Outside of LT LaunchX, she is very involved in Lane Tech’s community through clubs such as the National Honor Society, varsity robotics team, KISS Institute’s Botball competition at Loyola University, and the annual Japan Bowl Competition.
                   </span>
               </p>
               <p style = "color:tomato;font-family: monospace; font-size: 18px" onclick= "expandRowOne()" id="btnAmanda">Read more</p>
@@ -213,20 +208,16 @@
               <div class="img-text">
                   <h1 style = "font-family: monospace">Noah Jillson</h1>
                   <h2 style = "font-family: monospace">Vice President of Marketing</h2>
-                  <p>Noah is a junior at Lane Tech College Prep.
-                      As the Vice President of Marketing and Communications, Noah is in charge of providing marketing support for club fundraisers and companies 
+                  <p>Noah is a junior at Lane Tech College Prep. As the Vice President of Marketing and Communications, he is in charge of providing marketing support for club fundraisers and
                       <span id="dotsNoah">...</span>
                       <span id="moreNoah">
-                          with their branding and pitch designs.
-                          Outside of LaunchX, he was one of the founding members on a team 
-                          that built and programmed an autonomous vehicle for a competition at Rose-Hulman Institute of Technology.
-                          During the competition he took the role of a project manager and organized all the tasks that the team needed to complete,
-                          and learned how to use MATLAB, a professional computing software.
+                        companies with their branding and pitch designs. Outside of LT LaunchX, he is an avid cyclist and was one of the founding members on a team that built and programmed an autonomous vehicle for a competition at Rose-Hulman Institute of Technology. During the competition he took on the role of a project manager and organized all the tasks that the team needed to complete. He also learned how to use MATLAB, a professional computing software.
                       </span>
                   </p>
                   <p style = "color:tomato;font-family: monospace; font-size: 18px" onclick= "expandRowTwo()" id="btnNoah">Read more</p>
                   <p>
-                      <a style = "color: gray" href="mailto:njillson@cps.edu?" target="_top"><i class="fas fa-envelope"></i></a>
+                      <a style = "color: gray" href="mailto:noahjillson@gmail.com?" target="_top"><i class="fas fa-envelope"></i></a>
+                      <a style = "color: gray" target="_blank" href="https://www.linkedin.com/in/noah-jillson-91ab97190/"><i class= "fab fa-linkedin"></i></a>
                   </p>
                 </div>
               </div>
@@ -240,14 +231,10 @@
                     <h1 style = "font-family: monospace">Tia Hawthorne</h1>
                     <h2 style = "font-family: monospace">Vice President of Operations</h2>
                     <p>
-                        Tia is a sophomore attending Lane Tech College Prep, and is the Vice President of Operations of the Lane Tech LaunchX team.
-                        She has a deeply rooted passion for technology 
+                        Tia is a sophomore attending Lane Tech College Prep, and is the Vice President of Operations of the Lane Tech LaunchX team. She has a deeply rooted passion for technology
                         <span id="dotsTia">...</span>
                         <span id="moreTia">
-                          and the ventures that she endures are more than likely related to STEAM, or her
-                          interest in business and law. With a fairly strong background in tech, business, and law, due to her taking multiple classes
-                          and pursuing opportunities relating to her various interests within these topics, Tia has become a cutting edge critical thinker
-                          and problem solver. She values communication and teamwork, especially in the sense of delegation.
+                          and the ventures that she endures are likely to be related to STEAM, or her interest in business and law. With a fairly strong background in business, tech, and law, Tia has become a cutting edge critical thinker and problem solver. Her impressive skillset is applied to the club, where she coordinates communication and plans team events. Outside of LT LaunchX, she is the co-founder of Power By Girls, an entrepreneurship-based convention.
                         </span>
                     </p>
                     <p style = "color:tomato;font-family: monospace; font-size: 18px" onclick= "expandRowTwo()" id="btnTia">Read more</p>
