@@ -1,2 +1,2 @@
-# ltlaunchx
-Website for Lane Tech's LaunchX Club
+# protostar
+Website for Protostar Clubs
