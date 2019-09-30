@@ -3,39 +3,45 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
-    <!--link href="https://fonts.googleapis.com/css?family=Sniglet&display=swap" rel="stylesheet"-->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="../assets/cosmos-icon.png"/>
     <link rel="stylesheet" href="../styles.css" type="text/css"/>
-    <title>Protostar</title>
+    <script src="../script.js"></script>
+    <title>Protostar: Home</title>
   </head>
 
   <body>
     <div class = "topnav" id = "nav">
       <img src = "../assets/protostar-dark.png" id = "protostar-logo">
-      <a href = "index.html">home</a>
-      <a href = "about.html">about</a>
-      <a href = "team.html">our team</a>
       <a href = "sponsors.html">sponsors</a> <!--maybe consider renaming to "Partners"?-->
+      <a href = "team.html">our team</a>
+      <a href = "about.html">about</a>
+      <a href = "index.html">home</a>
       <!--a href = "getinvolved.html">get involved</a>-->
       <!--include resources page (eventually)-->
       <!--insert "Contact Us" page-->
       <a href="javascript:void(0);" class="icon" onclick="displayIcon()">
         <i class="fa fa-bars"></i>
       </a>
-    </div>
-    <script>
-      function displayIcon() {
-        var x = document.getElementById("nav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
+    </div> 
 
-   
+    <div class = "header">
+        <p>We are 
+            <u style = "color: #ED753A; text-decoration: none; border-bottom: 10px solid #ED753A">
+            <span style = "color: white"
+               class="txt-rotate"
+               data-period="1000"
+               data-rotate='["students.", "business people.", "entrepreneurs.", "innovators.", "changemakers.", "Protostar."]'>
+            </span>
+          </u>
+        </p>
+        <p class = "type"> At Protostar, we give the students the tools and resources to start real companies. 
+           Through our weekly lessons, we will train students in the skills and innovative thinking that allows founders 
+           to create authentic startups. We believe that age is just a number, and anyone capable of making a real and meaningful impact!    
+        </p>
+    </div>
+
   </body>
 
 <html>
