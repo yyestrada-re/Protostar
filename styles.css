@@ -93,7 +93,6 @@ h1, h2 {
     font: 3.0vh "Work Sans", sans-serif; 
     padding-top: 2vh;
     text-align: center;
-    text-transform: lowercase;
     color: #ED753A;
 }
 
@@ -120,39 +119,192 @@ h3 {
     z-index: -10;   
 }
 
+.left{
+    float: left;
+    max-width: 49.5%; 
+}
+
+.right{
+    float: right;
+    max-width: 49.5%;
+}
+
 .sect-text {
     text-align: left;
     align-items: inherit;
     font-family: "Montserrat";
     line-height: 5vh;
-    padding: 2vh 4%;
-    max-width: 850px;
+    padding: 2vh 5vh;
+    max-width: 70%;
     font-size: 2.0vh;
     word-wrap: break-word;
+    overflow: hidden;
     display: inline-block;
 }
 
 #img {
-    max-width: 90vh;
-    height: 56vh;
-    padding-left: 1vh;
-    padding-bottom: 2vh;
-    float: center;
-    position: right;
     overflow: hidden;
+    max-width: 90%;
 }
 
 .box {
     background-color: white;
-    max-width: 500px;
     display: inline-block;
     overflow: hidden;
-    height: 260px;
     border: 1px solid;
-    padding: 8px 50px;
+    padding-left: 5vh;
     padding-bottom: 2vh;
     box-shadow: 20px 30px #ED753A;
-    margin: 2vh 10vh;
+    margin-top: 2%;
 }
 
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {max-width: 35%; margin: 4vh 6.5vh;}
+.col-5 {width: 45%; padding:2% 2.5%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
+@media only screen and (max-width: 1000px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 80%;
+    padding: 1% 15%;
+  }
+
+  [id*="img"] {
+    padding: 2.5% 10%;
+  }
+
+  [id*="box-text"] {
+    padding: 0px;
+    max-width: 100%;
+  }
+
+  [class*="box"] {
+    margin: 1% 12%;
+  }
+
+  [class*="card-area"] {
+    width: 150%;
+  }
+
+}
+
+.sponsor-logo {
+    max-width: 50%;
+    padding: 0.5% 25%;
+}
+
+.card-area {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    /*margin: 10% auto;*/
+    box-shadow: 0px 2px 20px rgba(0,0,0,0.5);
+    background: #fff;
+    line-height: 1.4;
+    border-radius: 2px;
+    overflow: hidden;
+    z-index: 0;
+    margin-bottom: 2%;
+}
+
+.card-area:hover .sin-img{
+    transform: scale(1.1);
+}
+
+.card-area .sin-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    transition: 0.9s;
+}
+
+.card-area .img-area {
+    position: relative;
+    z-index: 0;
+    height: 600px;
+}
+
+.card-area .img-text {
+    padding: 1rem;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.card-area .img-text h1 {
+    line-height: 1;
+    margin: 0;
+    text-align: left;
+    color: #CB5C0D;
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 1.6rem;
+}
+
+.card-area .img-text h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: lowercase;
+    font-family: monospace;
+    color: tomato;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.card-area {
+    flex-direction: row;
+    max-width: 48%;
+    margin-left: 2%;
+    margin-top: 2%;  
+}
+
+.card-area .img-area {
+    flex-basis: 50%;
+    height: auto;
+}
+
+.card-area .img-text {
+    flex-basis: 60%;  
+}
+
+.card-area .img-text:before {
+    -webkit-transform: skewX(4deg);
+    transform: skewX(4deg);
+    content: '';
+    background: #fff;
+    width: 60px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.img-text p i {
+    margin: 0 5px;
+}
+
+.footer p i {
+    margin: 0 8px;
+}
+
+#moreYames, #moreTia, #moreNoah, #moreAmanda {display: none;}
+
+#founder {
+    flex-direction: row;
+}

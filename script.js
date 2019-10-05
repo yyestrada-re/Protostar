@@ -63,3 +63,20 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+
+function expandElement(x, y, z ) { /*where x = dots, y = span text, z = element button */
+  var dots = document.getElementById(x);
+  var moreText = document.getElementById(y);
+  var btnText = document.getElementById(z);
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
